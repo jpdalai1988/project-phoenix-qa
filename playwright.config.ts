@@ -43,7 +43,6 @@ export default defineConfig({
     {
       name: 'chromium',
       testDir: './src/tests/ui',
-
       use: { ...devices['Desktop Chrome'] },
     },
     {
@@ -55,16 +54,16 @@ export default defineConfig({
         },
       },
     },
-
-    // {
-    //   name: 'firefox',
-    //   use: { ...devices['Desktop Firefox'] },
-    // },
-
-    // {
-    //   name: 'webkit',
-    //   use: { ...devices['Desktop Safari'] },
-    // },
+    {
+      name: 'firefox',
+      testDir: './src/tests/ui',
+      use: { ...devices['Desktop Firefox'] },
+    },
+    {
+      name: 'webkit',
+      testDir: './src/tests/ui',
+      use: { ...devices['Desktop Safari'] },
+    },
 
     /* Test against mobile viewports. */
     // {
