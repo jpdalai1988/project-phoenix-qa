@@ -10,14 +10,18 @@
     "grep": {},
     "grepInvert": null,
     "maxFailures": 0,
-    "metadata": {},
+    "metadata": {
+      "actualWorkers": 4
+    },
     "preserveOutput": "always",
     "projects": [
       {
         "outputDir": "D:/Jitendra/project-phoenix-automation/test-results",
         "repeatEach": 1,
         "retries": 0,
-        "metadata": {},
+        "metadata": {
+          "actualWorkers": 4
+        },
         "id": "chromium",
         "name": "chromium",
         "testDir": "D:/Jitendra/project-phoenix-automation/src/tests/ui",
@@ -31,7 +35,9 @@
         "outputDir": "D:/Jitendra/project-phoenix-automation/test-results",
         "repeatEach": 1,
         "retries": 0,
-        "metadata": {},
+        "metadata": {
+          "actualWorkers": 4
+        },
         "id": "api",
         "name": "api",
         "testDir": "D:/Jitendra/project-phoenix-automation/src/tests/api",
@@ -75,17 +81,166 @@
     "workers": 4,
     "webServer": null
   },
-  "suites": [],
-  "errors": [
+  "suites": [
     {
-      "message": "Error: No tests found.\nMake sure that arguments are regular expressions matching test files.\nYou may need to escape symbols like \"$\" or \"*\" and quote the arguments.",
-      "stack": "Error: No tests found.\nMake sure that arguments are regular expressions matching test files.\nYou may need to escape symbols like \"$\" or \"*\" and quote the arguments."
+      "title": "api\\healthCheck.spec.ts",
+      "file": "api/healthCheck.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "API Health Checks",
+          "file": "api/healthCheck.spec.ts",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "GET /login - should return 200",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "api",
+                  "projectName": "api",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1366,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-17T09:53:36.738Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "42b1a82cd423cb279500-18cdcf4ac9e949e7e0a3",
+              "file": "api/healthCheck.spec.ts",
+              "line": 6,
+              "column": 7
+            },
+            {
+              "title": "POST /authenticate - should validate credentials",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "api",
+                  "projectName": "api",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 2685,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-17T09:53:36.619Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "42b1a82cd423cb279500-3ffeca08a6d3da7c2b43",
+              "file": "api/healthCheck.spec.ts",
+              "line": 12,
+              "column": 7
+            },
+            {
+              "title": "GET /upload - should be accessible after login",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "api",
+                  "projectName": "api",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 1470,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-17T09:53:36.605Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "42b1a82cd423cb279500-3a50f8f1540c7d9cc3c2",
+              "file": "api/healthCheck.spec.ts",
+              "line": 24,
+              "column": 7
+            },
+            {
+              "title": "API response time should be under 2 seconds",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "api",
+                  "projectName": "api",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 1408,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-17T09:53:36.692Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "42b1a82cd423cb279500-a038658f85b57eae36d3",
+              "file": "api/healthCheck.spec.ts",
+              "line": 29,
+              "column": 7
+            }
+          ]
+        }
+      ]
     }
   ],
+  "errors": [],
   "stats": {
-    "startTime": "2026-04-17T09:45:48.256Z",
-    "duration": 30.65000000000009,
-    "expected": 0,
+    "startTime": "2026-04-17T09:53:34.372Z",
+    "duration": 5135.065,
+    "expected": 4,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0

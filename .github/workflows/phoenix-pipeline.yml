@@ -32,11 +32,8 @@ jobs:
       - name: Install dependencies
         run: npm ci
       
-      - name: Install Playwright browsers
-        run: npx playwright install --with-deps chromium
-      
       - name: Run API tests
-        run: npx playwright test src/tests/api/ --project=chromium
+        run: npx playwright test src/tests/api/ --project=api
         continue-on-error: false
       
       - name: Upload API test results
