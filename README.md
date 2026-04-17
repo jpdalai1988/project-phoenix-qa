@@ -20,13 +20,13 @@ Project Phoenix/
 
 - Node.js 18+
 - npm or yarn
-- (Optional) OpenAI API key for AI features
+- (Optional) OpenAI API key for AI self-healing features
 
 ## 🔧 Installation
 
 ```bash
 # Clone repository
-git clone <your-repo-url>
+git clone https://github.com/jpdalai1988/project-phoenix-qa.git
 cd project-phoenix-qa
 
 # Install dependencies
@@ -40,16 +40,34 @@ nano .env
 
 # Install Playwright browsers
 npx playwright install
+
 ## Setup
 npm install
 npx playwright install
 
-## Run Tests
-# API
-npx playwright test tests/api
+# Run API tests only (fast feedback)
+npm run test:api
+# OR
+npx playwright test src/tests/api/
 
-# UI
-npx playwright test tests/ui
+# Run UI tests only
+npm run test:ui
+# OR
+npx playwright test src/tests/ui/
+
+# Run all tests
+npm run test:all
+
+# Run tests with visible browser (headed mode)
+npm run test:headed
+
+# Debug tests
+npm run test:debug
+
+# Generate and view HTML report
+npm run report
+# OR
+npx playwright show-report
 
 ## CI/CD
 GitHub Actions configured to:
