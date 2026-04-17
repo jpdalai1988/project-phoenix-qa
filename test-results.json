@@ -10,18 +10,14 @@
     "grep": {},
     "grepInvert": null,
     "maxFailures": 0,
-    "metadata": {
-      "actualWorkers": 4
-    },
+    "metadata": {},
     "preserveOutput": "always",
     "projects": [
       {
         "outputDir": "D:/Jitendra/project-phoenix-automation/test-results",
         "repeatEach": 1,
         "retries": 0,
-        "metadata": {
-          "actualWorkers": 4
-        },
+        "metadata": {},
         "id": "chromium",
         "name": "chromium",
         "testDir": "D:/Jitendra/project-phoenix-automation/src/tests/ui",
@@ -35,9 +31,7 @@
         "outputDir": "D:/Jitendra/project-phoenix-automation/test-results",
         "repeatEach": 1,
         "retries": 0,
-        "metadata": {
-          "actualWorkers": 4
-        },
+        "metadata": {},
         "id": "api",
         "name": "api",
         "testDir": "D:/Jitendra/project-phoenix-automation/src/tests/api",
@@ -65,7 +59,7 @@
         null
       ],
       [
-        "D:\\Jitendra\\project-phoenix-automation\\node_modules\\allure-playwright\\dist\\cjs\\index.js",
+        "D:\\Jitendra\\project-phoenix-automation\\node_modules\\allure-playwright\\dist\\index.js",
         null
       ]
     ],
@@ -81,251 +75,17 @@
     "workers": 4,
     "webServer": null
   },
-  "suites": [
+  "suites": [],
+  "errors": [
     {
-      "title": "ui\\loginAndUpload.spec.ts",
-      "file": "ui/loginAndUpload.spec.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [],
-      "suites": [
-        {
-          "title": "KYC Portal - Login and Document Upload",
-          "file": "ui/loginAndUpload.spec.ts",
-          "line": 5,
-          "column": 6,
-          "specs": [
-            {
-              "title": "TC-001: Successful login with valid credentials",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 4716,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-04-17T08:33:14.743Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "0870264062d2709af5f2-297c863731dbfa3a9d96",
-              "file": "ui/loginAndUpload.spec.ts",
-              "line": 14,
-              "column": 7
-            },
-            {
-              "title": "TC-003: Upload KYC document after login",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 6843,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-04-17T08:33:14.772Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "0870264062d2709af5f2-76048c15f61d6060307c",
-              "file": "ui/loginAndUpload.spec.ts",
-              "line": 26,
-              "column": 7
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "api\\healthCheck.spec.ts",
-      "file": "api/healthCheck.spec.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [],
-      "suites": [
-        {
-          "title": "API Health Checks",
-          "file": "api/healthCheck.spec.ts",
-          "line": 4,
-          "column": 6,
-          "specs": [
-            {
-              "title": "GET /login - should return 200",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "api",
-                  "projectName": "api",
-                  "results": [
-                    {
-                      "workerIndex": 2,
-                      "parallelIndex": 2,
-                      "status": "passed",
-                      "duration": 1218,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-04-17T08:33:14.725Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "42b1a82cd423cb279500-18cdcf4ac9e949e7e0a3",
-              "file": "api/healthCheck.spec.ts",
-              "line": 7,
-              "column": 7
-            },
-            {
-              "title": "POST /authenticate - should validate credentials",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "api",
-                  "projectName": "api",
-                  "results": [
-                    {
-                      "workerIndex": 3,
-                      "parallelIndex": 3,
-                      "status": "passed",
-                      "duration": 2074,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-04-17T08:33:14.828Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "42b1a82cd423cb279500-3ffeca08a6d3da7c2b43",
-              "file": "api/healthCheck.spec.ts",
-              "line": 13,
-              "column": 7
-            },
-            {
-              "title": "GET /upload - should be accessible after login",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "api",
-                  "projectName": "api",
-                  "results": [
-                    {
-                      "workerIndex": 2,
-                      "parallelIndex": 2,
-                      "status": "passed",
-                      "duration": 233,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-04-17T08:33:16.009Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "42b1a82cd423cb279500-3a50f8f1540c7d9cc3c2",
-              "file": "api/healthCheck.spec.ts",
-              "line": 25,
-              "column": 7
-            },
-            {
-              "title": "API response time should be under 2 seconds",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "api",
-                  "projectName": "api",
-                  "results": [
-                    {
-                      "workerIndex": 2,
-                      "parallelIndex": 2,
-                      "status": "passed",
-                      "duration": 254,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-04-17T08:33:16.274Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "42b1a82cd423cb279500-a038658f85b57eae36d3",
-              "file": "api/healthCheck.spec.ts",
-              "line": 30,
-              "column": 7
-            }
-          ]
-        }
-      ]
+      "message": "Error: No tests found.\nMake sure that arguments are regular expressions matching test files.\nYou may need to escape symbols like \"$\" or \"*\" and quote the arguments.",
+      "stack": "Error: No tests found.\nMake sure that arguments are regular expressions matching test files.\nYou may need to escape symbols like \"$\" or \"*\" and quote the arguments."
     }
   ],
-  "errors": [],
   "stats": {
-    "startTime": "2026-04-17T08:33:13.312Z",
-    "duration": 8706.419000000002,
-    "expected": 6,
+    "startTime": "2026-04-17T09:45:48.256Z",
+    "duration": 30.65000000000009,
+    "expected": 0,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0

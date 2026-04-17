@@ -17,7 +17,13 @@
     "heal": "ts-node src/ai/selfHealing.ts",
     "prepare": "husky install"
   },
-  "keywords": ["playwright", "ai-testing", "self-healing", "e2e", "automation"],
+  "keywords": [
+    "playwright",
+    "ai-testing",
+    "self-healing",
+    "e2e",
+    "automation"
+  ],
   "author": "Jitendra Prafull Dalai",
   "license": "MIT",
   "devDependencies": {
@@ -25,7 +31,7 @@
     "@types/node": "^20.10.0",
     "@typescript-eslint/eslint-plugin": "^6.13.0",
     "@typescript-eslint/parser": "^6.13.0",
-    "allure-playwright": "^2.10.0",
+    "allure-playwright": "^2.15.1",
     "axios": "^1.6.2",
     "dotenv": "^16.3.1",
     "eslint": "^8.54.0",

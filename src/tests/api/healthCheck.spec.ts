@@ -1,5 +1,4 @@
 import { test, expect } from '@playwright/test';
-import axios from 'axios';
 
 test.describe('API Health Checks', () => {
   const baseURL = process.env.BASE_URL || 'https://the-internet.herokuapp.com';
